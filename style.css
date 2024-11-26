@@ -1,0 +1,191 @@
+/* Universal styles */
+body {
+  margin: 0;
+  background-color: #EDF3F8;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* header style */
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container ul {
+  display: flex;
+  gap: 50px;
+}
+
+header a {
+  color: #36536B;
+}
+
+header a:hover {
+  color: #BA4270;
+  transform: scale(1.1);
+  display: block;
+}
+
+header .btn {
+  background-color: #BA4270;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 20px;
+}
+
+header .btn {
+  background-color: #BA4270;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 20px;
+}
+
+header .btn:hover {
+  background-color: #EDF3F8;
+  color: #BA4270;
+  display: inline;
+  border: 1px solid #BA4270;
+}
+
+/* intro style */
+.intro .container {
+  display: flex;
+  align-items: center;
+}
+
+.intro h1,
+.intro img {
+  width: 50%;
+}
+
+.intro h1 {
+  font-size: 62px;
+  color: #36536B;
+  margin-top: -100px;
+  font-weight: 600;
+}
+
+/* implaement style */
+.implement .container {
+  display: flex;
+  align-items: center;
+}
+
+.implement .container div {
+  margin-top: -70px;
+}
+
+.implement h2 {
+  font-size: 38px;
+  color: #36536B;
+}
+
+.implement p {
+  color: #36536B;
+  line-height: 26px;
+}
+
+/* servise style */
+.services .box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services .service {
+  width: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service h3 {
+  color: #36536B;
+  font-size: 22px;
+}
+
+/* footer style */
+footer {
+  background-color: #1b262f;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  gap: 50px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: bisque;
+  transform: scale(1.1);
+  display: block;
+}
+
+footer .container div {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (max-width: 1199px) {
+  .intro .container {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .intro img {
+    margin-top: -50px;
+  }
+
+  .intro h1 {
+    width: 70%;
+    text-align: center;
+  }
+
+  .implement .container {
+    flex-direction: column-reverse;
+  }
+
+  .implement .container div {
+    text-align: center;
+  }
+
+  .implement p {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .services {
+    margin: 70px auto;
+    width: 80%;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+
+}
